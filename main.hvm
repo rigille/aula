@@ -8,4 +8,6 @@
 (Nat.mul Nat.zero a) = Nat.zero
 (Nat.mul (Nat.succ pred) b) = (Nat.add b (Nat.mul pred b))
 
+(Nat.ltn a b) = (Nat.lte (Nat.succ a) b)
+
 (Main) = (Nat.mul (Nat.succ (Nat.succ Nat.zero)) (Nat.succ (Nat.succ Nat.zero)))
