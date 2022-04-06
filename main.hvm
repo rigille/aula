@@ -9,5 +9,6 @@
 (Nat.mul (Nat.succ pred) b) = (Nat.add b (Nat.mul pred b))
 
 (Nat.ltn a b) = (Nat.lte (Nat.succ a) b)
+(Nat.gtn a b) = (Nat.lte (Nat.succ b) a)
 
 (Main) = (Nat.mul (Nat.succ (Nat.succ Nat.zero)) (Nat.succ (Nat.succ Nat.zero)))
