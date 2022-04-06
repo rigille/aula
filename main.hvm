@@ -11,4 +11,8 @@
 (Nat.ltn a b) = (Nat.lte (Nat.succ a) b)
 (Nat.gtn a b) = (Nat.lte (Nat.succ b) a)
 
+(Nat.sub a Nat.zero) = a
+(Nat.sub (Nat.succ a) (Nat.succ b)) = (Nat.sub a b)
+(Nat.sub Nat.zero (Nat.succ b)) = Nat.zero
+
 (Main) = (Nat.mul (Nat.succ (Nat.succ Nat.zero)) (Nat.succ (Nat.succ Nat.zero)))
