@@ -1,4 +1,7 @@
 (Nat.add Nat.zero a) = a
 (Nat.add (Nat.succ pred) b) = (Nat.succ (Nat.add pred b))
 
-(Main) = (Nat.add (Nat.succ (Nat.succ Nat.zero)) (Nat.succ (Nat.succ Nat.zero)))
+(Nat.mul Nat.zero a) = Nat.zero
+(Nat.mul (Nat.succ pred) b) = (Nat.add b (Nat.mul pred b))
+
+(Main) = (Nat.mul (Nat.succ (Nat.succ Nat.zero)) (Nat.succ (Nat.succ Nat.zero)))
