@@ -1,0 +1,4 @@
+(Nat.add Nat.zero a) = a
+(Nat.add (Nat.succ pred) b) = (Nat.succ (Nat.add pred b))
+
+(Main) = (Nat.add (Nat.succ (Nat.succ Nat.zero)) (Nat.succ (Nat.succ Nat.zero)))
