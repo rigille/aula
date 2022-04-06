@@ -1,6 +1,10 @@
 (Nat.add Nat.zero a) = a
 (Nat.add (Nat.succ pred) b) = (Nat.succ (Nat.add pred b))
 
+(Nat.lte Nat.zero a) = True
+(Nat.lte (Nat.succ a) Nat.zero) = False
+(Nat.lte (Nat.succ a) (Nat.succ b)) = True
+
 (Nat.mul Nat.zero a) = Nat.zero
 (Nat.mul (Nat.succ pred) b) = (Nat.add b (Nat.mul pred b))
 
